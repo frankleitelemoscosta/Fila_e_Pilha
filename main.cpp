@@ -11,9 +11,10 @@ int main()
 
     do{
 
-        cout<<"|---------------MENU-----------------|"<<endl;
-        cout<<"|1- Inserir um individuo na fila     |"<<endl;
-        cout<<"|2- Remover alguem da fila           |"<<endl;
+        cout<<"|---------------------MENU---------------------|"<<endl;
+        cout<<"|1- Inserir um individuo na fila               |"<<endl;
+        cout<<"|2- Remover alguem da fila                     |"<<endl;
+        cout<<"|3- Imprimir todas as pessoas que estão na fila|"<<endl;
         do{ 
             error = 0;
             cin>>op;
