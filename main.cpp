@@ -7,7 +7,9 @@ using namespace std;
 int main()
 {
     int op,error;
-    Fila f;
+    Fila fila;
+    string nome;
+    unsigned long long int CPF;
 
     do{
 
@@ -34,7 +36,22 @@ int main()
         {
             case 1:
 
-            f.inserir_na_lista();
+            cin.ignore();
+
+            cout<<"Insira o nome do individuo"<<endl;
+            getline(cin,nome);
+
+            cout<<"Insira o CPF dessa pessoa"<<endl;
+            cin>>CPF;
+
+            fila.inserir_na_Fila(nome,CPF);
+
+            break;
+            case 2:
+                fila.remover();
+            break;
+            case 3:
+                fila.imprimir_toda_fila();
             break;
             default:
                 cout<<"você digitou uma opção inexistente"<<endl;
