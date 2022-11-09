@@ -10,6 +10,7 @@ Fila::Fila(){
 void Fila::inserir_na_Fila(string nome,unsigned long long int cpf)
 {
     Pessoa *novo_no = new Pessoa();
+    int numero = 0;
 
     if(vazia())
     {
@@ -23,6 +24,13 @@ void Fila::inserir_na_Fila(string nome,unsigned long long int cpf)
     }
     cauda->setnome(nome);
     cauda->setcpf(cpf);
+    cout<<"--------------------------"<<endl;
+    cout<<"DADOS DO NOVO INTEGRANTE:"<<endl;
+    cout<<"Nome: "<<nome<<endl;
+    cout<<"CPF: "<<cpf<<endl;
+    numero = tamanho();
+    cout<<"Numero de pessoas a frente dela: "<<numero - 1<<endl;
+    cout<<"--------------------------"<<endl;
 }
 
 void Fila::remover()

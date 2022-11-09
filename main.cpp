@@ -17,6 +17,8 @@ int main()
         cout<<"|1- Inserir um individuo na fila               |"<<endl;
         cout<<"|2- Remover alguem da fila                     |"<<endl;
         cout<<"|3- Imprimir todas as pessoas que estão na fila|"<<endl;
+        cout<<"|0- Sair do programa                           |"<<endl;
+        
         do{ 
             error = 0;
             cin>>op;
@@ -52,6 +54,9 @@ int main()
             break;
             case 3:
                 fila.imprimir_toda_fila();
+            break;
+            case 0:
+                cout<<"Saindo..."<<endl;
             break;
             default:
                 cout<<"você digitou uma opção inexistente"<<endl;
