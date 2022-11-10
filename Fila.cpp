@@ -40,8 +40,10 @@ void Fila::remover()
     ponteiro = cabeca;
     //fim das variaveis locais
     
+    cout<<"Nome da pessoa que saiu: "<<cabeca->getnome();
     cabeca = ponteiro->obterproximo();
     free(ponteiro);//deletando o nó após ja feito a alteração
+    cout<<"quantia de pessoas que permanecem: "<<tamanho()<<endl;
 }
 
 bool Fila::vazia()
@@ -54,6 +56,7 @@ int Fila::tamanho()
     //inicio das variaveis locais
     Pessoa *ponteiro = new Pessoa;
     int contador = 0;
+    ponteiro = cabeca;
     //fim das variaveis locais
 
     while(ponteiro)

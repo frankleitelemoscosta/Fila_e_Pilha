@@ -6,26 +6,27 @@ using namespace std;
 
 int main()
 {
+    //inicio das variaveis locais
     int op,error;
     Fila fila;
     string nome;
     unsigned long long int CPF;
+    //fim das variaveis locais
 
+    //inicio do menu
     do{
 
-        cout<<"|---------------------MENU---------------------|"<<endl;
-        cout<<"|1- Inserir um individuo na fila               |"<<endl;
-        cout<<"|2- Remover alguem da fila                     |"<<endl;
-        cout<<"|3- Imprimir todas as pessoas que estão na fila|"<<endl;
-        cout<<"|0- Sair do programa                           |"<<endl;
-        
-        do{ 
+        do{
+            cout<<"|---------------------MENU---------------------|"<<endl;
+            cout<<"|1- Inserir um individuo na fila               |"<<endl;
+            cout<<"|2- Remover alguem da fila                     |"<<endl;
+            cout<<"|3- Imprimir todas as pessoas que estão na fila|"<<endl;
+            cout<<"|0- Sair do programa                           |"<<endl;
+ 
             error = 0;
             cin>>op;
             if(cin.fail())
             {
-                system("clear");
-                //system("wls");//para caso o sistema operacional seja o windowns
                 error = 1;
                 cout<<"Digite um número válido por obsequio"<<endl;
                 cin.clear();
@@ -64,7 +65,9 @@ int main()
         }
 
     }while(op!=0);
-
+    //fim do menu
 
     return 0;
 }
+
+//fim do código
